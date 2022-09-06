@@ -8,11 +8,12 @@ teams : List[ITeam] =  [
     ITeam(name="Backend Developers",members=6,date_created= "04/04/2019",status="Active", list_tasks=[])]
 
 
-users = [
+users : List[IUser]= [
     IUser(id=1, name= "John",
         lastname= "Doe", age=67,email= "john@gmail.com",
         address="Florida, USA", 
-        number="9393993993",status= "active", position="Senior Developer"), IUser(id= 2,
+        number="9393993993",status= "active", position="Senior Developer"),
+    IUser(id= 2,
         name= "Jane",
         lastname= "Doeieh",
         age= 45, email= "jdoeiet@gmail.com",
