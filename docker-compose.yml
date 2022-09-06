@@ -1,0 +1,15 @@
+version: "3.9"   
+services:
+  backend:
+    build: ./backend-projects
+    ports:
+      - "8000:5000"
+    command: "sh -c 'uvicorn backend_projects.main:app --reload --workers 3 --host 0.0.0.0 --port 8000'"
+    expose: 
+      - "5000"
+
+    volumes:
+      - ./backend-projects:/backend_projects
+
+#creacion del dockerfile, version, servicios utilizados en este proyecto, donde se instalara el dockerfile (build) donde se ejecutara el proyecto (ports)
+#commando para ejecucion del servidor en el puerto 500 y volumes es en donde se copiaran los archivos al ejecutar el command 

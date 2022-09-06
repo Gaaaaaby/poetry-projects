@@ -8,6 +8,8 @@ packages = [{include = "backend_projects"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+fastapi = "^0.75.0"
+uvicorn = "^0.18.3"
 
 
 [build-system]

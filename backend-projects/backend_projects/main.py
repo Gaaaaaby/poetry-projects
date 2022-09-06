@@ -1,7 +1,6 @@
-
-from utils import FastAPI, Path
-from db import teams, users
-from schemas import IUser
+from fastapi import FastAPI, Path
+from backend_projects.objects import users
+from backend_projects.schemas import IUser
 
 
 app = FastAPI()

@@ -1,5 +1,5 @@
 from typing import List
-from schemas import ITeam, IUser
+from backend_projects.schemas import ITeam, IUser
 
 
 teams : List[ITeam] =  [
