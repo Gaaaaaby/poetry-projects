@@ -1,0 +1,21 @@
+
+ 
+# Definición de los entrypoints
+entryPoints:
+  web:
+    address: :80
+    
+ 
+  websecure:
+    address: :7000
+
+ 
+# Proveedores: Docker y configuración dinámica mediante provider de tipo file.
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+
+# run this command on the console http://backend.localhost/docs
+
+ 
